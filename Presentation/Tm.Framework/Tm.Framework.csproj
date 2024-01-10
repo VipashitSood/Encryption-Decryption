@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Copyright>Copyright © TM Solutions, Ltd</Copyright>
+    <Company>TM Solutions, Ltd</Company>
+    <Authors>TM Solutions, Ltd</Authors>
+    <Version>1.0.0.0</Version>
+    <Description>Tm.Framework is a class library project containing some common presentation things for project</Description>
+    <RepositoryUrl>http://devops.tglserver.net/TMotions/JAB/_git/JAB</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <AssemblyName>Tm.Framework</AssemblyName>
+    <RootNamespace>Tm.Framework</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TagHelpers\Public\**" />
+    <Compile Remove="TagHelpers\Shared\**" />
+    <EmbeddedResource Remove="TagHelpers\Public\**" />
+    <EmbeddedResource Remove="TagHelpers\Shared\**" />
+    <None Remove="TagHelpers\Public\**" />
+    <None Remove="TagHelpers\Shared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UI\LayoutExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BundlerMinifier.Core" Version="3.2.447" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="WebMarkupMin.AspNetCore3" Version="2.8.2" />
+    <PackageReference Include="WebMarkupMin.NUglify" Version="2.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Tm.Core\Tm.Core.csproj" />
+    <ProjectReference Include="..\..\Libraries\Tm.Data\Tm.Data.csproj" />
+    <ProjectReference Include="..\..\Libraries\Tm.Services\Tm.Services.csproj" />
+  </ItemGroup>
+
+</Project>

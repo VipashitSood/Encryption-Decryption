@@ -1,0 +1,7 @@
+﻿{
+  "DataConnectionString": "Data Source=10.0.3.4\\tmdev;Initial Catalog=pms-dev;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=TMdevP@55w0rd",
+  "DataProvider": "sqlserver",
+  "IsEncryption": false, //In case of encrypted "Password", "IsEncryption" should be true otherwise set false
+  "SecretKey": "7892498151439370",
+  "RawDataSettings": {}
+}
