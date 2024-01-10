@@ -1,3 +1,7 @@
+In this project I have implemented Encryption Decryption of the currency.
+Created service for Encryption/decryption.
+Encryption/decryption Key and IV is store in appsetting.json file in EncryptionSettings.
+
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
